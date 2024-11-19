@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, Input, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { debounceTime, map } from 'rxjs';
 import { StationData } from './model';
@@ -11,14 +11,18 @@ import { StationData } from './model';
 })
 export class AutoSelectComponent implements OnInit {
   @Input() items: StationData[] = [];
-
-  // filteredItems$: Observable<StationData[]> = of<StationData[]>([]);
   filteredItems: StationData[] = [];
   searchControl = new FormControl('');
   isDropdownVisible = false;
-  oldData = [];
 
-  constructor() {}
+  constructor(private elementRef: ElementRef) {}
+
+  @HostListener('document:click', ['$event'])
+  handleClickOutside(event: Event): void {
+    if (!this.elementRef.nativeElement.contains(event.target)) {
+      this.isDropdownVisible = false;
+    }
+  }
 
   public ngOnInit(): void {
     this.searchControl.valueChanges
@@ -48,22 +52,20 @@ export class AutoSelectComponent implements OnInit {
   }
 
   public onSelect(item: any): void {
-    console.log('SET', item.stationName);
-    this.searchControl.setValue(item.stationName, { emitEvent: false });
-    // this.filterItems(item);
+    this.searchControl.setValue(item.stationName);
     this.isDropdownVisible = false;
   }
 
   public focusOutFunction(): void {
-    console.log('FOCUS');
     this.isDropdownVisible = false;
-    // this.oldData.push()
   }
 
   public focusFunction() {
     this.isDropdownVisible = true;
-    // this.filterItems(this.searchControl.value as string);
+    this.filterItems(this.searchControl.value as string);
   }
 
   // kiedy input jest focus a click był nie po elemencie, a poza komponentem, jak ukryć wybraną listę?
+  // podpowiadanie literek jak w placeholder
+  // podpowiadanie starych wartości jak nic nie wpisane
 }
