@@ -40,8 +40,11 @@
         "prettier/prettier": [
           "error",
           {
+            "endOfLine": "off"
+          },
+          {
             "parser": "angular"
-          }
+          },
         ]
       }
     }

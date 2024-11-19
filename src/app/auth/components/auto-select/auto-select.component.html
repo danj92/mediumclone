@@ -1,0 +1,22 @@
+<div class="autocomplete-container">
+  <input
+    type="text"
+    [formControl]="searchControl"
+    class="autocomplete-input"
+    placeholder="Type to search..."
+    (focus)="focusFunction()"
+  />
+
+  <!-- (focusout)="focusOutFunction()"
+  (focus)="focusFunction()" -->
+
+  <ng-content *ngIf="isDropdownVisible">
+    <ul *ngIf="filteredItems?.length" class="autocomplete-dropdown">
+      <li *ngFor="let item of filteredItems" class="autocomplete-item" (click)="onSelect(item)">
+        {{ item.stationName }}
+      </li>
+    </ul>
+  </ng-content>
+
+  <p *ngIf="filteredItems?.length === 0">No results found</p>
+</div>

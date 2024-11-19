@@ -1,5 +1,6 @@
-<h1>
-  Hello angular
-</h1>
-
+<mc-top-bar></mc-top-bar>
 <router-outlet></router-outlet>
+
+<mc-auto-select [items]="allStations"></mc-auto-select>
+
+<p *ngIf="selectedStation">You selected: {{ selectedStation }}</p>

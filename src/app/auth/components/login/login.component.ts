@@ -1,20 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Store, select } from '@ngrx/store';
 import { Observable } from 'rxjs';
+import { PageAnalytics } from '../../../decorators/page-analytic';
+import { myPrintLog } from '../../../decorators/print-log';
 import { AppStateInterface } from '../../../shared/types/appState.interface';
 import { BackendErrorsInterface } from '../../../shared/types/backendErrors.interface';
-import { AuthService } from '../../service/auth.service';
-import { registerAction } from '../../store/actions/register.action';
+import { loginAction } from '../../store/actions/login.action';
 import { isSubmittingSelector, validationErrorsSelector } from '../../store/selectors';
-import { RegisterRequestInterface } from '../../types/registerRequest.interface';
+import { LoginRequestInterface } from '../../types/loginRequest.interface';
 
 @Component({
-  selector: 'mc-register',
-  templateUrl: './register.component.html',
-  styleUrls: ['./register.component.scss'],
+  selector: 'mc-login',
+  templateUrl: './login.component.html',
+  styleUrl: './login.component.scss',
 })
-export class RegisterComponent implements OnInit {
+@PageAnalytics('LoginComponent')
+export class LoginComponent {
   form: FormGroup;
   isSubmitting$: Observable<boolean>;
   backendErrors$: Observable<BackendErrorsInterface | null>;
@@ -22,7 +24,6 @@ export class RegisterComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
     private store: Store<AppStateInterface>,
-    private authService: AuthService,
   ) {}
 
   ngOnInit(): void {
@@ -37,18 +38,18 @@ export class RegisterComponent implements OnInit {
     ) as Observable<BackendErrorsInterface | null>;
   }
 
+  @myPrintLog('Inicializacja form')
   initializeForm(): void {
     this.form = this.fb.group({
-      username: ['', Validators.required],
       email: ['', Validators.required],
       password: ['', Validators.required],
     });
   }
 
   onSubmit(): void {
-    const request: RegisterRequestInterface = {
+    const request: LoginRequestInterface = {
       user: this.form.value,
     };
-    this.store.dispatch(registerAction({ request }));
+    this.store.dispatch(loginAction({ request }));
   }
 }
