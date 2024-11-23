@@ -1,22 +1,22 @@
 <div class="autocomplete-container">
-  <input
-    type="text"
-    [formControl]="searchControl"
-    class="autocomplete-input"
-    placeholder="Type to search..."
-    (focus)="focusFunction()"
-  />
+  <div class="input-wrapper">
+    <div class="hint-wrapper">
+      <span class="transparent">{{ typedText }}</span>
+      <span class="hint">{{ remainingHint }}</span>
+    </div>
 
-  <!-- (focusout)="focusOutFunction()"
-  (focus)="focusFunction()" -->
+    <input
+      type="text"
+      [formControl]="searchInput"
+      (focus)="onFocus()"
+      (keydown)="onKeydown($event)"
+      class="input-with-overlay"
+    />
+  </div>
 
-  <ng-content *ngIf="isDropdownVisible">
-    <ul *ngIf="filteredItems?.length" class="autocomplete-dropdown">
-      <li *ngFor="let item of filteredItems" class="autocomplete-item" (click)="onSelect(item)">
-        {{ item.stationName }}
-      </li>
-    </ul>
-  </ng-content>
-
-  <p *ngIf="filteredItems?.length === 0">No results found</p>
+  <ul *ngIf="filteredSuggestions.length" class="dropdown">
+    <li *ngFor="let suggestion of filteredSuggestions" (click)="selectSuggestion(suggestion)">
+      {{ suggestion.stationName }}
+    </li>
+  </ul>
 </div>
