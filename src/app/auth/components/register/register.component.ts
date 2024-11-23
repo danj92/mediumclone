@@ -10,9 +10,10 @@ import { isSubmittingSelector, validationErrorsSelector } from '../../store/sele
 import { RegisterRequestInterface } from '../../types/registerRequest.interface';
 
 @Component({
-  selector: 'mc-register',
-  templateUrl: './register.component.html',
-  styleUrls: ['./register.component.scss'],
+    selector: 'mc-register',
+    templateUrl: './register.component.html',
+    styleUrls: ['./register.component.scss'],
+    standalone: false
 })
 export class RegisterComponent implements OnInit {
   form: FormGroup;

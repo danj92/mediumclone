@@ -11,9 +11,10 @@ import { isSubmittingSelector, validationErrorsSelector } from '../../store/sele
 import { LoginRequestInterface } from '../../types/loginRequest.interface';
 
 @Component({
-  selector: 'mc-login',
-  templateUrl: './login.component.html',
-  styleUrl: './login.component.scss',
+    selector: 'mc-login',
+    templateUrl: './login.component.html',
+    styleUrl: './login.component.scss',
+    standalone: false
 })
 @PageAnalytics('LoginComponent')
 export class LoginComponent {

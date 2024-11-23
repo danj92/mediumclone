@@ -7,7 +7,6 @@ import { RouterModule } from '@angular/router';
 import { EffectsModule } from '@ngrx/effects';
 import { BackendErrorMessagesModule } from '../shared/modules/backendErrorMessages/backendErrorMessages.module';
 import { PersistanceService } from '../shared/services/persistance.service';
-import { AutoSelectComponent } from './components/auto-select/auto-select.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { AuthService } from './service/auth.service';
@@ -37,8 +36,8 @@ const routes = [
     EffectsModule.forFeature([RegisterEffect, LoginEffect, GetCurrentUserEffect]),
     BackendErrorMessagesModule,
   ],
-  declarations: [RegisterComponent, LoginComponent, AutoSelectComponent],
+  declarations: [RegisterComponent, LoginComponent],
   providers: [AuthService, PersistanceService],
-  exports: [AutoSelectComponent],
+  exports: [],
 })
 export class AuthModule {}

@@ -20,3 +20,69 @@
 [NX Daemon Server] - 2024-11-22T23:16:26.384Z - Closed a connection. Number of open connections: 0
 [NX Daemon Server] - 2024-11-22T23:16:26.384Z - [WATCHER]: Stopping the watcher for d:\mediumclone-angular (sources)
 [NX Daemon Server] - 2024-11-22T23:16:26.384Z - [WATCHER]: Stopping the watcher for d:\mediumclone-angular (outputs)
+[NX Daemon Server] - 2024-11-23T17:09:50.323Z - Started listening on: \\.\pipe\nx\C:\Users\Andrzej\AppData\Local\Temp\8590c61d9b1493224ecc\d.sock
+[NX Daemon Server] - 2024-11-23T17:09:50.329Z - [WATCHER]: Subscribed to changes within: d:\mediumclone-angular (native)
+[NX Daemon Server] - 2024-11-23T17:09:50.336Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-23T17:09:50.337Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-11-23T17:09:50.337Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-23T17:09:50.340Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-11-23T17:09:50.340Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-11-23T17:09:50.341Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 2.
+[NX Daemon Server] - 2024-11-23T17:09:50.341Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-11-23T17:09:50.341Z - [WATCHER]: Stopping the watcher for d:\mediumclone-angular (sources)
+[NX Daemon Server] - 2024-11-23T17:09:50.342Z - [WATCHER]: Stopping the watcher for d:\mediumclone-angular (outputs)
+[NX Daemon Server] - 2024-11-23T18:20:40.314Z - Started listening on: \\.\pipe\nx\C:\Users\Andrzej\AppData\Local\Temp\8590c61d9b1493224ecc\d.sock
+[NX Daemon Server] - 2024-11-23T18:20:40.317Z - [WATCHER]: Subscribed to changes within: d:\mediumclone-angular (native)
+[NX Daemon Server] - 2024-11-23T18:20:40.327Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-23T18:20:40.329Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-11-23T18:20:40.329Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-23T18:20:40.332Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-11-23T18:20:40.334Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-11-23T18:20:40.335Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 3.
+[NX Daemon Server] - 2024-11-23T18:20:40.335Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-11-23T18:20:40.335Z - [WATCHER]: Stopping the watcher for d:\mediumclone-angular (sources)
+[NX Daemon Server] - 2024-11-23T18:20:40.335Z - [WATCHER]: Stopping the watcher for d:\mediumclone-angular (outputs)
+[NX Daemon Server] - 2024-11-23T18:25:54.152Z - Started listening on: \\.\pipe\nx\C:\Users\Andrzej\AppData\Local\Temp\8590c61d9b1493224ecc\d.sock
+[NX Daemon Server] - 2024-11-23T18:25:54.155Z - [WATCHER]: Subscribed to changes within: d:\mediumclone-angular (native)
+[NX Daemon Server] - 2024-11-23T18:25:54.156Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-23T18:25:54.157Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-11-23T18:25:54.159Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-23T18:25:54.161Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-11-23T18:25:54.161Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-11-23T18:25:54.161Z - Handled FORCE_SHUTDOWN. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-11-23T18:25:54.162Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-11-23T18:25:54.162Z - [WATCHER]: Stopping the watcher for d:\mediumclone-angular (sources)
+[NX Daemon Server] - 2024-11-23T18:25:54.162Z - [WATCHER]: Stopping the watcher for d:\mediumclone-angular (outputs)
+[NX Daemon Server] - 2024-11-23T18:30:29.107Z - Started listening on: \\.\pipe\nx\C:\Users\Andrzej\AppData\Local\Temp\8590c61d9b1493224ecc\d.sock
+[NX Daemon Server] - 2024-11-23T18:30:29.111Z - [WATCHER]: Subscribed to changes within: d:\mediumclone-angular (native)
+[NX Daemon Server] - 2024-11-23T18:30:29.112Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-23T18:30:29.113Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-11-23T18:30:29.115Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-23T18:30:29.117Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-11-23T18:30:29.117Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-11-23T18:30:29.117Z - Handled FORCE_SHUTDOWN. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-11-23T18:30:29.118Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-11-23T18:30:29.118Z - [WATCHER]: Stopping the watcher for d:\mediumclone-angular (sources)
+[NX Daemon Server] - 2024-11-23T18:30:29.118Z - [WATCHER]: Stopping the watcher for d:\mediumclone-angular (outputs)
+[NX Daemon Server] - 2024-11-23T19:04:19.105Z - Started listening on: \\.\pipe\nx\C:\Users\Andrzej\AppData\Local\Temp\8590c61d9b1493224ecc\d.sock
+[NX Daemon Server] - 2024-11-23T19:04:19.109Z - [WATCHER]: Subscribed to changes within: d:\mediumclone-angular (native)
+[NX Daemon Server] - 2024-11-23T19:04:19.113Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-23T19:04:19.115Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-11-23T19:04:19.116Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-23T19:04:19.118Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-11-23T19:04:19.119Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-11-23T19:04:19.119Z - Handled FORCE_SHUTDOWN. Handling time: 1. Response time: 1.
+[NX Daemon Server] - 2024-11-23T19:04:19.119Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-11-23T19:04:19.119Z - [WATCHER]: Stopping the watcher for d:\mediumclone-angular (sources)
+[NX Daemon Server] - 2024-11-23T19:04:19.119Z - [WATCHER]: Stopping the watcher for d:\mediumclone-angular (outputs)
+[NX Daemon Server] - 2024-11-23T19:32:03.987Z - Started listening on: \\.\pipe\nx\C:\Users\Andrzej\AppData\Local\Temp\8590c61d9b1493224ecc\d.sock
+[NX Daemon Server] - 2024-11-23T19:32:03.991Z - [WATCHER]: Subscribed to changes within: d:\mediumclone-angular (native)
+[NX Daemon Server] - 2024-11-23T19:32:03.999Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-23T19:32:04.001Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-11-23T19:32:04.002Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-11-23T19:32:04.003Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-11-23T19:32:04.005Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-11-23T19:32:04.005Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 2.
+[NX Daemon Server] - 2024-11-23T19:32:04.005Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-11-23T19:32:04.005Z - [WATCHER]: Stopping the watcher for d:\mediumclone-angular (sources)
+[NX Daemon Server] - 2024-11-23T19:32:04.005Z - [WATCHER]: Stopping the watcher for d:\mediumclone-angular (outputs)

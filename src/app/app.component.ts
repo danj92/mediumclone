@@ -1,14 +1,13 @@
-import { Component } from '@angular/core';
-import { Observable } from 'rxjs';
-import { StationService } from './auth/components/auto-select/service/station.service';
-import { StationData } from './auth/components/auto-select/station-model';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  standalone: false,
 })
-export class AppComponent {
-  allStations$: Observable<StationData[]> = this.stationService.fetchStations();
-  constructor(private stationService: StationService) {}
+export class AppComponent implements OnInit {
+  constructor() {}
+
+  public ngOnInit(): void {}
 }
